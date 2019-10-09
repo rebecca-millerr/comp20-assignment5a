@@ -1,5 +1,5 @@
 
-//
+// reads and validates number from document
 function readNum(input_id) {
     let value = document.getElementById(input_id).value;
     value = parseFloat(value);
@@ -16,13 +16,13 @@ function readNum(input_id) {
     }
 }
 
-//
+// prints numbers for debugging
 function displayNums(first, second) {
     alert("First number is " + first + "\nSecond number is " 
           + second + "\n");
 }
 
-//
+// checks if factor is a factor of num
 function isFactor(num, factor) {
     if ( num % factor === 0 )
         return true;
@@ -30,7 +30,7 @@ function isFactor(num, factor) {
         return false;
 }
 
-//
+// prints array of factors
 function showFactors(arr) {
     let string = "";
 
@@ -40,7 +40,7 @@ function showFactors(arr) {
     return string;
 }
 
-//
+// sums up elements of array
 function addFactors(arr) {
     let sum = 0;
 
@@ -50,7 +50,7 @@ function addFactors(arr) {
     return sum;
 }
 
-//
+// adds all known factors to array
 function getFactors(num) {
     let factors = new Array();
 
